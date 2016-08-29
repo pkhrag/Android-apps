@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Shooting game</string>
+    <string name="hello_app">Hello App!</string>
+    <string name="log_in">Log in</string>
+</resources>
