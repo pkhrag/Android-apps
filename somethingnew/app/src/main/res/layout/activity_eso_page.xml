@@ -14,49 +14,49 @@
         android:text="ESO 204A: Fluid Mechanics and Rate Processes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ESO 203A"
+        android:layout_below="@+id/ESO203A"
         android:layout_alignParentStart="true"
-        android:id="@+id/ESO 204A" />
+        android:id="@+id/ESO204A" />
 
     <CheckBox
         android:text="ESO 205A: Nature and Properties of Materials"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ESO 205A"
-        android:layout_below="@+id/ESO 204A"
+        android:id="@+id/ESO205A"
+        android:layout_below="@+id/ESO204A"
         android:layout_alignParentStart="true" />
 
     <CheckBox
         android:text="ESO 206A: Biotechnology"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ESO 205A"
+        android:layout_below="@+id/ESO205A"
         android:layout_alignParentStart="true"
-        android:id="@+id/ESO 206A" />
+        android:id="@+id/ESO206A" />
 
     <CheckBox
         android:text="ESO 207A: Data Structures"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ESO 206A"
+        android:layout_below="@+id/ESO206A"
         android:layout_alignParentStart="true"
-        android:id="@+id/ESO 207A" />
+        android:id="@+id/ESO207A" />
 
     <CheckBox
         android:text="ESO 208A: Numerical Methods"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ESO 207A"
+        android:layout_below="@+id/ESO207A"
         android:layout_alignParentStart="true"
-        android:id="@+id/ESO 208A" />
+        android:id="@+id/ESO208A" />
 
     <CheckBox
         android:text="ESO 209A: Dynamics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ESO 208A"
+        android:layout_below="@+id/ESO208A"
         android:layout_alignParentStart="true"
-        android:id="@+id/ESO 209A" />
+        android:id="@+id/ESO209A" />
 
     <CheckBox
         android:text="ESO 201A: Thermodynamics"
@@ -71,7 +71,7 @@
         android:text="ESO 202A: Mechanics of Solids"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ESO 202A"
+        android:id="@+id/ESO202A"
         android:layout_below="@+id/checkBox"
         android:layout_alignParentStart="true" />
 
@@ -79,8 +79,8 @@
         android:text="ESO 203A:Introduction to Electrical Engineering"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ESO 203A"
-        android:layout_below="@+id/ESO 202A"
+        android:id="@+id/ESO203A"
+        android:layout_below="@+id/ESO202A"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -90,5 +90,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginStart="40dp"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 </RelativeLayout>

@@ -10,80 +10,111 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.prakhar.somethingnew.Department_courses">
 
-    <Button
-        android:text="Economics"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ECO"
-        android:layout_above="@+id/CE"
-        android:layout_alignParentStart="true" />
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
-    <Button
-        android:text="Electrical Engineering"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/EE"
-        android:layout_marginBottom="35dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:text="Civil Engineering"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/CE"
-        android:layout_above="@+id/EE"
-        android:layout_alignParentStart="true" />
+            <Button
+                android:text="Earth Science"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ES"
+                android:layout_above="@+id/CHE"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Biological Science and Engineering"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/BSBE "
-        android:layout_above="@+id/ECO"
-        android:layout_alignParentStart="true" />
+            <Button
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/AE"
+                android:id="@+id/CHE"
+                android:text="Chemical Engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <Button
-        android:text="Computer Science and Engineeing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cse"
-        android:layout_above="@+id/BSBE "
-        android:layout_alignParentStart="true" />
+            <Button
+                android:text="Aerospace Engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AE"
+                android:layout_above="@+id/CHM"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Chemistry"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/CHM"
-        android:layout_above="@+id/cse"
-        android:layout_alignParentStart="true" />
+            <Button
+                android:text="Chemistry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CHM"
+                android:layout_above="@+id/cse"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="Aerospace Engineering"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/AE"
-        android:layout_above="@+id/CHM"
-        android:layout_alignParentStart="true" />
+            <Button
+                android:text="Computer Science and Engineeing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cse"
+                android:layout_above="@+id/BSBE"
+                android:layout_alignParentStart="true" />
 
-    <Button
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/AE"
-        android:id="@+id/button"
-        android:text="Chemical Engineering"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        Complex Analysistrue
+            <Button
+                android:text="Material Science and engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MSE" />
 
-    <Button
-        android:text="Earth Science"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ES"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/button" />
-</Re
-ativeLayout>@+id/CHE
+            <Button
+                android:text="Biological Science and Engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/BSBE"
+                android:layout_above="@+id/ECO"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Civil Engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CE"
+                android:layout_above="@+id/EE"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Economics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ECO"
+                android:layout_above="@+id/CE"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:text="Mathematics and Scientific Computing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2" />
+
+            <Button
+                android:text="mechanical engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ME" />
+
+            <Button
+                android:text="Electrical Engineering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EE"
+                android:layout_marginBottom="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
 
 

@@ -17,29 +17,29 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="70dp"
-        android:id="@+id/MSO 202" />
+        android:id="@+id/MSO202" />
 
     <CheckBox
         android:text="MO 201A: Probability and Statistics"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/MSO 203b"
+        android:layout_below="@+id/MSO203b"
         android:layout_alignParentStart="true"
-        android:id="@+id/MSO 201" />
+        android:id="@+id/MSO201" />
 
     <CheckBox
         android:text="MSO 203b : Differential Equation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/MSO 203b"
-        android:layout_below="@+id/MSO 202"
+        android:id="@+id/MSO203b"
+        android:layout_below="@+id/MSO202"
         android:layout_alignParentStart="true" />
 
     <CheckBox
         android:text="CSO 201A: Basic Organic Chemstry"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/MSO 201"
+        android:layout_below="@+id/MSO201"
         android:layout_alignParentStart="true"
         android:id="@+id/CSO201" />
 
@@ -49,13 +49,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/CSO201"
         android:layout_alignParentStart="true"
-        android:id="@+id/CSO 202" />
+        android:id="@+id/CSO202" />
 
     <CheckBox
         android:text="PSO 201A: Quantumm Physics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/CSO 202"
+        android:layout_below="@+id/CSO202"
         android:layout_alignParentStart="true"
-        android:id="@+id/PSO 201" />
+        android:id="@+id/PSO201" />
 </RelativeLayout>

@@ -17,16 +17,18 @@
         android:layout_below="@+id/elective"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp"
-        android:id="@+id/departmental" />
+        android:id="@+id/departmental"
+        android:onClick="departmental"/>
 
     <Button
-        android:text="submit"
-        android:layout_width="wrap_content"
+        android:text="SO"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/submit"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="71dp" />
+        android:layout_below="@+id/departmental"
+        android:layout_marginTop="18dp"
+        android:id="@+id/so"
+        android:layout_alignParentEnd="true"
+        android:onClick="so"/>
 
     <Button
         android:text="electives"
@@ -35,16 +37,19 @@
         android:layout_marginTop="19dp"
         android:id="@+id/elective"
         android:layout_below="@+id/eso"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="electives"/>
+
 
     <Button
-        android:text="eso/so"
+        android:text="eso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:id="@+id/eso"
         android:layout_below="@+id/Compulsory"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="eso"/>
 
     <Button
         android:text="Compulsory"
@@ -54,6 +59,17 @@
         android:id="@+id/Compulsory"
         android:elevation="0dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="compulsory"/>
+
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:layout_below="@+id/so"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="submit"/>
 
 </RelativeLayout>

@@ -39,8 +39,8 @@
         android:text="Me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:id="@+id/ME"
         android:layout_below="@+id/MSE"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="16dp"
-        android:id="@+id/ME " />
+        android:layout_toEndOf="@+id/gridLayout2" />
 </RelativeLayout>
