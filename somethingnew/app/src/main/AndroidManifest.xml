@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".new_semester"></activity>
+        <activity android:name=".new_semester" />
+        <activity android:name=".eso_page" />
+        <activity android:name=".Main2Activity_so" />
+        <activity android:name=".Department_courses" />
+        <activity android:name=".dept_contd"></activity>
     </application>
 
 </manifest>
