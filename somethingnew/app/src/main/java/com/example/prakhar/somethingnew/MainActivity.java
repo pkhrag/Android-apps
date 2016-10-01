@@ -9,7 +9,7 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "manuMessage";
+    private static final  TAG = "manuMessage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
