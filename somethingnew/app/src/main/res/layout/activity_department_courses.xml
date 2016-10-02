@@ -43,7 +43,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/AE"
                 android:layout_above="@+id/CHM"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:onClick="aero"/>
 
             <Button
                 android:text="Chemistry"
@@ -59,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/cse"
                 android:layout_above="@+id/BSBE"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:onClick="cse"/>
 
             <Button
                 android:text="Material Science and engineering"
@@ -95,7 +97,8 @@
                 android:text="Mathematics and Scientific Computing"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/button2" />
+                android:id="@+id/button2"
+                android:onClick="mth"/>
 
             <Button
                 android:text="mechanical engineering"
@@ -110,7 +113,8 @@
                 android:id="@+id/EE"
                 android:layout_marginBottom="35dp"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:onClick="ee"/>
 
         </LinearLayout>
     </ScrollView>

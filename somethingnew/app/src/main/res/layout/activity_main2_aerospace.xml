@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="61dp"
-        android:id="@+id/AE201"
+        android:id="@+id/mth301"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
@@ -23,23 +23,23 @@
         android:text="AE 311"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/AE201"
+        android:layout_below="@+id/mth301"
         android:layout_alignParentStart="true"
-        android:id="@+id/Ae3" />
+        android:id="@+id/mth204" />
 
     <CheckBox
         android:text="AE 321"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/Ae3"
+        android:layout_below="@+id/mth204"
         android:layout_alignParentStart="true"
-        android:id="@+id/ae32" />
+        android:id="@+id/mth302" />
 
     <CheckBox
         android:text="AE 331"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ae32"
+        android:layout_below="@+id/mth302"
         android:layout_alignParentStart="true"
         android:id="@+id/ae4" />
 </RelativeLayout>

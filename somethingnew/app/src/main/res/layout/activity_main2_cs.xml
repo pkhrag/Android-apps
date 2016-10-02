@@ -9,34 +9,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.prakhar.somethingnew.Main2Activity_cs">
-    <?xml version="1.0" encoding="utf-8"?>
-
-
-
 
         <CheckBox
             android:text="CS 203 A: Abstract Algebra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/AE201"
+            android:layout_marginTop="37dp"
             android:layout_alignParentStart="true"
-            android:id="@+id/Ae3" />
+            android:id="@+id/mth204" />
 
         <CheckBox
             android:text="CS 202A:Logics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Ae3"
+            android:layout_below="@+id/mth204"
             android:layout_alignParentStart="true"
-            android:id="@+id/ae32" />
+            android:id="@+id/mth302" />
 
         <CheckBox
             android:text="CS 201A:Discrete Algebra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/ae32"
+            android:layout_below="@+id/mth302"
             android:layout_alignParentStart="true"
-            android:id="@+id/ae4" />
+            android:id="@+id/cs201" />
 
 
 

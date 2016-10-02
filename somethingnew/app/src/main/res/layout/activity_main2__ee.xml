@@ -9,57 +9,40 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.prakhar.somethingnew.Main2Activity_EE">
-    <?xml version="1.0" encoding="utf-8"?><![CDATA[
-
-
-
-            android:layout_width=
-            android:layout_height=
-            android:layout_marginTop=61dp"
-            android:id="@+id/AE201"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-
-
-
-
-
-
-    ]]>
 
     <CheckBox
         android:text="Industrial Electronics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ae4"
-        android:layout_below="@+id/ae32"
+        android:id="@+id/ie"
+        android:layout_below="@+id/mth302"
         android:layout_alignParentStart="true"
         android:layout_marginTop="37dp" />
 
     <CheckBox
-            android:text="Power Systems"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-        android:id="@+id/ae32"
+        android:text="Power Systems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mth302"
         android:layout_marginTop="47dp"
-        android:layout_below="@+id/checkBox"
+        android:layout_below="@+id/eso"
         android:layout_alignParentStart="true" />
 
     <CheckBox
         android:text="EE 200"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Ae3"
-        android:layout_below="@+id/ae32"
+        android:id="@+id/mth204"
+        android:layout_below="@+id/mth302"
         android:layout_alignParentStart="true" />
 
     <CheckBox
+        android:id="@+id/eso"
         android:layout_marginTop="12dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="ESO 203A": Introduction to Electrical Engineering
+        android:text="ESO 203A: Introduction to Electrical Engineering" ></CheckBox>
 
 </RelativeLayout>
