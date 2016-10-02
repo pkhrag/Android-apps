@@ -10,6 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.prakhar.somethingnew.Main2Activity_so">
 
+    <TextView
+        android:text="SO "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
     <CheckBox
         android:text="MSO 202a: Complex Analysis"
         android:layout_width="match_parent"
@@ -20,10 +30,10 @@
         android:id="@+id/MSO202" />
 
     <CheckBox
-        android:text="MO 201A: Probability and Statistics"
+        android:text="MSO 201A: Probability and Statistics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/MSO203b"
+        android:layout_below="@+id/MSO203"
         android:layout_alignParentStart="true"
         android:id="@+id/MSO201" />
 
@@ -31,7 +41,7 @@
         android:text="MSO 203b : Differential Equation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/MSO203b"
+        android:id="@+id/MSO203"
         android:layout_below="@+id/MSO202"
         android:layout_alignParentStart="true" />
 
@@ -58,4 +68,14 @@
         android:layout_below="@+id/CSO202"
         android:layout_alignParentStart="true"
         android:id="@+id/PSO201" />
+
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PSO201"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:id="@+id/submit"
+        android:onClick="onClick"/>
 </RelativeLayout>
