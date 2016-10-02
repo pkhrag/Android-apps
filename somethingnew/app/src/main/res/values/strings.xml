@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">something new</string>
+    <string name="title_activity_main2_cse">Main2Activity_cse</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
 </resources>
