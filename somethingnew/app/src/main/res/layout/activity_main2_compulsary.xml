@@ -19,34 +19,34 @@
         android:id="@+id/com" />
 
     <CheckBox
-        android:text="ESC 201A :Introduction to electronics"
+        android:text="ESC 201A: Introduction to electronics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/com"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox2" />
+        android:id="@+id/esc" />
 
     <CheckBox
         android:text="TA 201A: Introduction to manufacturing processes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox2"
+        android:layout_below="@+id/esc"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox3" />
+        android:id="@+id/ta201" />
 
     <CheckBox
-        android:text="TA 202:Introduction to manufacturing process 2"
+        android:text="TA 202: Introduction to manufacturing process 2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox3"
+        android:layout_below="@+id/ta201"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox4" />
+        android:id="@+id/ta202" />
 
     <TextView
         android:text="HSS COURSES"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox4"
+        android:layout_below="@+id/ta202"
         android:layout_alignParentStart="true"
         android:layout_marginStart="24dp"
         android:layout_marginTop="28dp"
@@ -63,38 +63,48 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
         android:layout_marginTop="34dp"
-        android:id="@+id/checkBox6" />
+        android:id="@+id/eng" />
 
     <CheckBox
         android:text="ART 105:Introduction to Art of Video Making"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox6"
+        android:layout_below="@+id/eng"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox7" />
+        android:id="@+id/art" />
 
     <CheckBox
         android:text="PHI 143: INtroduction To Political Philosphy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox7"
+        android:layout_below="@+id/art"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox8" />
+        android:id="@+id/phi" />
 
     <CheckBox
         android:text="SOC 171A: Introductory Sociology"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox8"
+        android:layout_below="@+id/phi"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox9" />
+        android:id="@+id/soc" />
 
     <CheckBox
         android:text="PSY15 :Introduction to Psychology"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox9"
+        android:layout_below="@+id/soc"
         android:layout_alignParentStart="true"
-        android:id="@+id/checkBox10" />
+        android:id="@+id/psy" />
+
+    <Button
+        android:text="submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/psy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:id="@+id/submit"
+        android:onClick="onClick"/>
 
 </RelativeLayout>
