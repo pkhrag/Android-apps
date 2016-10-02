@@ -19,18 +19,29 @@ import android.util.Log;
 
 import android.Manifest.permission;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 
 public class new_semester extends AppCompatActivity {
 
-    //long int ESO[10][=
     private static final int MY_PERMISSIONS_REQUEST_WRITE_CALENDAR = 123;
     private static final String TAG = "manuMessages";
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_semester);
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     public void departmental(View view) {
@@ -60,26 +71,91 @@ public class new_semester extends AppCompatActivity {
         ContentResolver cr = getContentResolver();
         ContentValues values = new ContentValues();
 
-        long startMillis=0;
+        long startMillis = 0;
         long endMillis = 0;
         Calendar beginTime = Calendar.getInstance();
-        beginTime.set(2016, 10, 2, 8, 30);
+        beginTime.set(2016, 10, 2, 14, 30);
         startMillis = beginTime.getTimeInMillis();
         Calendar endTime = Calendar.getInstance();
-        endTime.set(2016, 10, 2, 9, 30);
+        endTime.set(2016, 10, 2, 15, 30);
         endMillis = endTime.getTimeInMillis();
+
+        long  ESO201s;
+        long  ESO201e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO201s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO201e = endTime.getTimeInMillis();
+
+        long  ESO202s;
+        long  ESO202e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO202s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO202e = endTime.getTimeInMillis();
+
+        long  ESO203s;
+        long  ESO203e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO203s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO203e = endTime.getTimeInMillis();
+
+        long  ESO204s;
+        long  ESO204e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO204s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO204e = endTime.getTimeInMillis();
+
+
+        long  ESO205s;
+        long  ESO205e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO205s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO205e = endTime.getTimeInMillis();
+
+        long  ESO206s;
+        long  ESO206e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO206s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO206e = endTime.getTimeInMillis();
+
+        long  ESO207s;
+        long  ESO207e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO207s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO207e = endTime.getTimeInMillis();
+
+        long  ESO208s;
+        long  ESO208e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO208s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO208e = endTime.getTimeInMillis();
+
+        long  ESO209s;
+        long  ESO209e;
+        beginTime.set(2016, 10, 2, 8, 30);
+        ESO209s = beginTime.getTimeInMillis();
+        endTime.set(2016, 10, 2, 9, 30);
+        ESO209e = endTime.getTimeInMillis();
+
         values.put(CalendarContract.Events.CALENDAR_ID, 1);
-        values.put(CalendarContract.Events.DTSTART, startMillis);
-        values.put(CalendarContract.Events.DTEND, endMillis);
+        values.put(CalendarContract.Events.DTSTART, cal.getTimeInMillis() + 1 * 60 * 1000);
+        values.put(CalendarContract.Events.DTEND, cal.getTimeInMillis() + 2 * 60 * 1000);
         values.put(CalendarContract.Events.TITLE, "Jazzercise");
         values.put(CalendarContract.Events.DESCRIPTION, "Group workout");
         values.put(CalendarContract.Events.EVENT_TIMEZONE, TimeZone.getDefault().getID());
         values.put(CalendarContract.Events.RRULE, "FREQ=WEEKLY");
         values.put(CalendarContract.Events.HAS_ALARM, 1);
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
-            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.WRITE_CALENDAR},
+            ActivityCompat.requestPermissions(this, new String[]{permission.WRITE_CALENDAR},
                     MY_PERMISSIONS_REQUEST_WRITE_CALENDAR);
 
             //    ActivityCompat#requestPermissions
@@ -90,7 +166,7 @@ public class new_semester extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        Log.i(TAG, "Timezone retrieved=>"+TimeZone.getDefault().getID());
+        Log.i(TAG, "Timezone retrieved=>" + TimeZone.getDefault().getID());
         Uri event = cr.insert(EVENTS_URI, values);
 
         Uri REMINDERS_URI = Uri.parse(getCalendarUriBase(true) + "reminders");
@@ -109,7 +185,7 @@ public class new_semester extends AppCompatActivity {
     private String getCalendarUriBase(boolean eventUri) {
         Uri calendarURI = null;
         try {
-            if (android.os.Build.VERSION.SDK_INT <= 7) {
+            if (Build.VERSION.SDK_INT <= 7) {
                 calendarURI = (eventUri) ? Uri.parse("content://calendar/") : Uri.parse("content://calendar/calendars");
             } else {
                 calendarURI = (eventUri) ? Uri.parse("content://com.android.calendar/") : Uri
@@ -124,5 +200,41 @@ public class new_semester extends AppCompatActivity {
     public void compulsory(View view) {
         Intent depart = new Intent(this, Main2Activity_compulsary.class);
         startActivity(depart);
+    }
+
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    public Action getIndexApiAction() {
+        Thing object = new Thing.Builder()
+                .setName("new_semester Page") // TODO: Define a title for the content shown.
+                // TODO: Make sure this auto-generated URL is correct.
+                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                .build();
+        return new Action.Builder(Action.TYPE_VIEW)
+                .setObject(object)
+                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                .build();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        AppIndex.AppIndexApi.start(client, getIndexApiAction());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.end(client, getIndexApiAction());
+        client.disconnect();
     }
 }
