@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Department_courses extends AppCompatActivity {
-
+//sks
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

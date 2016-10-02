@@ -27,4 +27,9 @@ public class new_semester extends AppCompatActivity {
         Intent ESO = new Intent(this, eso_page.class);
         startActivity(ESO);
     }
+
+    public void compulsory(View view) {
+        Intent depart = new Intent(this, Main2Activity_compulsary.class);
+        startActivity(depart);
+    }
 }
