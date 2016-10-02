@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2_compulsary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prakhar.somethingnew.Main2Activity_compulsary">
+
+    <CheckBox
+        android:text="COM 200: Communication Skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/com" />
+
+    <CheckBox
+        android:text="ESC 201A :Introduction to electronics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/com"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="TA 201A: Introduction to manufacturing processes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox3" />
+
+    <CheckBox
+        android:text="TA 202:Introduction to manufacturing process 2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox4" />
+
+    <TextView
+        android:text="HSS COURSES"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView2"
+        android:fontFamily="cursive"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true" />
+
+    <CheckBox
+        android:text="ENG 123: Introduction to Literature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/checkBox6" />
+
+    <CheckBox
+        android:text="ART 105:Introduction to Art of Video Making"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox7" />
+
+    <CheckBox
+        android:text="PHI 143: INtroduction To Political Philosphy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox7"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox8" />
+
+    <CheckBox
+        android:text="SOC 171A: Introductory Sociology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox8"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox9" />
+
+    <CheckBox
+        android:text="PSY15 :Introduction to Psychology"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox9"
+        android:layout_alignParentStart="true"
+        android:id="@+id/checkBox10" />
+
+</RelativeLayout>
