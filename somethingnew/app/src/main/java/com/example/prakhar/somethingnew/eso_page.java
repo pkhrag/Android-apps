@@ -36,6 +36,7 @@ public class eso_page extends AppCompatActivity {
         new_sem.putExtra("ESO208A",eso208a.isChecked());
         new_sem.putExtra("ESO209A",eso209a.isChecked());
 
+
         startActivity(new_sem);
     }
 }
