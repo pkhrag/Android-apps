@@ -20,7 +20,20 @@
         <activity android:name=".Main2Activity_so" />
         <activity android:name=".Department_courses" />
         <activity android:name=".dept_contd" />
-        <activity android:name=".Main2Activity_compulsary"></activity>
+        <activity android:name=".Main2Activity_compulsary" />
+        <activity android:name=".Main2Activity_aerospace" />
+        <activity
+            android:name=".Main2Activity_cse"
+            android:label="@string/title_activity_main2_cse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity_cs" />
+        <activity android:name=".Main2Activity_EE" />
+        <activity android:name=".Main2Activity_mth"></activity>
     </application>
 
 </manifest>
