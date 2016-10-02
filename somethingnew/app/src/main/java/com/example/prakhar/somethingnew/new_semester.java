@@ -14,7 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.provider.CalendarContract;
 import android.support.v4.app.ActivityCompat;
-
+import android.util.Log;
 
 import android.Manifest.permission;
 
@@ -23,6 +23,7 @@ import android.Manifest.permission;
 public class new_semester extends AppCompatActivity {
 
     private static final int MY_PERMISSIONS_REQUEST_WRITE_CALENDAR = 123;
+    private static final String TAG = "manuMessages";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +47,15 @@ public class new_semester extends AppCompatActivity {
     }
 
     @TargetApi(Build.VERSION_CODES.N)
+
     public void submit(View view) {
         String calID = "primary";
-
+        //Calendar cal = Calendar.getInstance();
         Intent SUBMIT = new Intent(this, MainActivity.class);
-        Calendar beginTime = Calendar.getInstance();
+        java.util.Calendar beginTime = java.util.Calendar.getInstance();
         beginTime.set(2016, 10, 2, 7, 30);
         long startMillis = beginTime.getTimeInMillis();
-        Calendar endTime = Calendar.getInstance();
+        java.util.Calendar endTime = java.util.Calendar.getInstance();
         endTime.set(2016, 10, 2, 8, 30);
         long endMillis = endTime.getTimeInMillis();
 
@@ -70,21 +72,8 @@ public class new_semester extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.WRITE_CALENDAR},
-                    MY_PERMISSIONS_REQUEST_WRITE_CALENDAR);
-
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
         ContentResolver cr = getContentResolver();
+
         ContentValues values = new ContentValues();
         values.put(CalendarContract.Events.DTSTART, startMillis);
         values.put(CalendarContract.Events.DTEND, endMillis);
@@ -95,7 +84,9 @@ public class new_semester extends AppCompatActivity {
 
 
         Uri uri = cr.insert(CalendarContract.Events.CONTENT_URI, values);
-
+//        int rows = getContentResolver().update(uri, values, null, null);
+        cr.insert( uri, values );
+        Log.i(TAG, "submit");
         startActivity(SUBMIT);
     }
     public void compulsory(View view) {
