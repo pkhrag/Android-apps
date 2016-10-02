@@ -36,7 +36,11 @@
         </activity>
         <activity android:name=".Main2Activity_cs" />
         <activity android:name=".Main2Activity_EE" />
-        <activity android:name=".Main2Activity_mth"></activity>
+        <activity android:name=".Main2Activity_mth"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
