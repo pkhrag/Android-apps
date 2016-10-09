@@ -90,8 +90,8 @@ public class new_semester extends AppCompatActivity {
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        Log.i(TAG, "Timezone retrieved=>"+TimeZone.getDefault().getID());
         Uri event = cr.insert(EVENTS_URI, values);
+        Log.i(TAG, "Timezone retrieved=>"+TimeZone.getDefault().getID());
 
         Uri REMINDERS_URI = Uri.parse(getCalendarUriBase(true) + "reminders");
         values = new ContentValues();

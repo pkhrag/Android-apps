@@ -8,6 +8,8 @@ import android.widget.CheckBox;
 
 public class eso_page extends AppCompatActivity {
 
+    CheckBox eso201a, eso202a, eso203a, eso204a, eso205a, eso206a, eso207a, eso208a, eso209a;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,15 +18,15 @@ public class eso_page extends AppCompatActivity {
 
     public void onClick(View view) {
         Intent new_sem = new Intent(this, new_semester.class);
-        CheckBox eso201a = (CheckBox) findViewById(R.id.ESO201A);
-        CheckBox eso202a = (CheckBox) findViewById(R.id.ESO202A);
-        CheckBox eso203a = (CheckBox) findViewById(R.id.ESO203A);
-        CheckBox eso204a = (CheckBox) findViewById(R.id.ESO204A);
-        CheckBox eso205a = (CheckBox) findViewById(R.id.ESO205A);
-        CheckBox eso206a = (CheckBox) findViewById(R.id.ESO206A);
-        CheckBox eso207a = (CheckBox) findViewById(R.id.ESO207A);
-        CheckBox eso208a = (CheckBox) findViewById(R.id.ESO208A);
-        CheckBox eso209a = (CheckBox) findViewById(R.id.ESO209A);
+        eso201a = (CheckBox) findViewById(R.id.ESO201A);
+        eso202a = (CheckBox) findViewById(R.id.ESO202A);
+        eso203a = (CheckBox) findViewById(R.id.ESO203A);
+        eso204a = (CheckBox) findViewById(R.id.ESO204A);
+        eso205a = (CheckBox) findViewById(R.id.ESO205A);
+        eso206a = (CheckBox) findViewById(R.id.ESO206A);
+        eso207a = (CheckBox) findViewById(R.id.ESO207A);
+        eso209a = (CheckBox) findViewById(R.id.ESO209A);
+        eso208a = (CheckBox) findViewById(R.id.ESO208A);
 
         new_sem.putExtra("ESO201A",eso201a.isChecked());
         new_sem.putExtra("ESO202A",eso202a.isChecked());
